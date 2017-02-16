@@ -1,0 +1,676 @@
+@charset "UTF-8";
+/* CSS Document */
+* { margin:0; padding:0; } 
+
+html, body {
+    	width: 100%;
+    	height: 100%;
+   	margin: 0px;
+    	padding: 0px;
+    	overflow-x: hidden;
+    	min-width:960px;
+}
+
+#wrap {
+	height: auto;
+	min-height: 100%;
+}
+
+#meat{ 
+	padding-bottom: 150px; /* must be same height as the footer */
+
+}  
+
+#footer {
+	position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
+	clear:both;
+	left:0px;
+	background: url(../images/ban.jpg) repeat;
+	text-align: center;
+	width: 100%;
+	display:table;
+	color:white;
+	text-shadow: black -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	letter-spacing:1px; 	
+}
+
+#logo{
+	width:240px;
+	padding-top:15px;
+}
+
+a, input[type=submit],input[type=reset],input[type=button],input[type=file]{
+	cursor:pointer;
+}
+body{
+    font: 13px/22px Helvetica, Arial, sans-serif;  
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+    line-height: 150%;
+	padding-left:20px;
+	padding-right:15px;
+}
+input[type=submit],input[type=reset],input [type=file], button{
+  background:#006;
+  color:white;
+  padding: 5px;
+  outline: none;
+  -webkit-border-radius:15px;
+  	-moz-border-radius:15px;
+  	-o-border-radius:15px;
+  	-ms-border-radius:15px;
+  	border-radius:15px;
+  	
+}
+#nav {
+	position: relative;
+	left:0;
+	width: 100%;
+	height:50px;
+	background: white;
+	font-size:14px;
+
+}
+	
+#nav ul {
+	margin: 0;
+	width: 100%;
+	list-style: none;
+
+}
+	
+#nav ul li {
+	display:inline;
+	width:90px;
+	float:right;
+
+}
+#nav ul li.last {
+	padding-right:30px;
+
+}
+
+#nav ul li a {
+	text-shadow: white 0.1em 0.1em 0.2em;
+	color: #999;
+	width: 100px;
+	font-size: 14px;
+	line-height: 44px;
+	text-align: center;
+	text-decoration: none;
+	font-variant: bold;
+	display:block;
+}
+	#nav ul li a:hover {
+		color: #006;
+	}
+	#nav ul li a:selected {  
+         color: gray;  
+    } 
+
+	
+html { 
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+
+}
+#openrules{
+	left:0px;
+	background: url(../images/ban.jpg) repeat;
+	text-align: center;
+	color:white;
+	letter-spacing:1px; 
+	
+  	margin: 10px 10px 10px 10px;
+
+}
+div#shutdown{
+    	width:800px;
+	background:#FFFFE0; 
+	font-size:14px;
+	font-variant: bold;
+	text-align: center;
+	padding: 2px 2px 2px 2px;
+	margin: 20px auto -20px auto;
+
+}
+body#index{
+    	width:100%;
+	height:100%;
+	background: url(../images/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body#active{
+	background:#006;
+}
+div#banner{
+	background: url(../images/ban.jpg) repeat-x;
+	height: 150px;
+
+}
+div#banner img{
+	height: 150px;
+}
+
+div#content {
+	padding: 15px;
+	display: table; 
+	background-color: #FFF;
+	margin: 50px auto;
+    	width: 940px;
+    	max-width: 940px;
+	overflow:auto;
+
+}  
+    #main {  
+        display: table-cell; 
+		width: 600px;
+        	max-width: 600px;
+        	padding-right: 10px; 
+    }  
+    aside {
+		display: table-cell;  
+		width: 250px;
+		border-left-width: 1px;
+		border-left-style: dashed;
+		border-left-color: #aaa;
+}
+div#body{
+	padding-top:10%;
+	padding-left:20%;
+	color:#006;
+	
+}
+div#body input{
+	background:#fff;
+	color:#006;
+	 border:2px solid #006;
+  	font-size:25px;
+ 	 width:150px;
+  
+  	min-height:50px;
+  	margin-bottom:10px;
+  	margin-top:10px;
+  	outline: none;
+  	
+}
+	div#body input:hover {
+		background:#006;
+		color: white;
+
+	}
+div#index{
+display:table;
+}
+
+div#indexContent{
+        display: table-cell; 
+	height:800px;
+}
+
+div#indexButton{
+ display: table-cell; 
+}
+
+div.homebox{
+ display: table; 
+};
+
+div.home{
+ display: table-cell; 
+};
+
+
+#footNav{
+	display:table-cell;
+	vertical-align:middle;
+	width:30%;
+}
+
+div#footer li {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #006;
+	width: 75px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+div#footer a{
+	color: #006;
+	margin-right: 10px;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	font-variant: bold;
+	text-shadow: black 0.0em 0.0em 0.0em;
+}
+
+div#footer a:hover{
+	color:orange;
+}
+
+#footInfo{
+	display:table-cell;
+	vertical-align:middle;
+	border-left-width: 1px;
+	border-left-style: dashed;
+	border-left-color: #006;
+	width:40%;
+}
+#footConnect{
+	display:table-cell;
+	vertical-align:middle;
+	border-left-width: 1px;
+	border-left-style: dashed;
+	border-left-color: #006;
+	width:30%;
+}
+	
+/*Register Pop Up*/
+#backgroundPopup{
+display:none;
+position:fixed;
+_position:absolute; /* hack for internet explorer 6*/
+height:100%;
+width:100%;
+top:0;
+left:0;
+background:#000000;
+border:1px solid #cecece;
+z-index:1;
+}
+#popupRegister{
+display:none;
+position:fixed;
+_position:absolute; /* hack for internet explorer 6*/
+height:430px;
+width:350px;
+background:#FFFFFF;
+border:2px solid #cecece;
+z-index:2;
+padding:12px;
+font-size:13px;
+}
+#popupRegister h1{
+text-align:left;
+color:#006;
+font-size:22px;
+font-weight:700;
+border-bottom:1px dotted #D3D3D3;
+padding-bottom:2px;
+margin-bottom:20px;
+}
+#popupRegisterClose{
+font-size:14px;
+line-height:14px;
+right:6px;
+top:4px;
+position:absolute;
+color:#006;
+font-weight:700;
+width:20px;
+display:block;
+}
+#registerArea{
+}
+#registerArea ul li{
+color:#006;
+}
+#registerArea ul li input{
+  border:1px solid #ccc;
+  font-size:14px;
+  width:200px;
+  min-height:20px;
+  display:block;
+  margin-left:auto;
+  margin-bottom:3px;
+  margin-top:3px;
+  outline: none;
+ 
+ 
+}
+
+#registerArea ul li input[type=submit]{
+  background:#006;
+  color:white;
+  padding:10px;
+}
+
+/*Login Pop Up*/
+#popupLogin{
+display:none;
+position:fixed;
+_position:absolute; /* hack for internet explorer 6*/
+height:230px;
+width:350px;
+background:#FFFFFF;
+border:2px solid #cecece;
+z-index:2;
+padding:12px;
+font-size:13px;
+}
+#popupLogin h1{
+text-align:left;
+color:#006;
+font-size:22px;
+font-weight:700;
+border-bottom:1px dotted #D3D3D3;
+padding-bottom:2px;
+margin-bottom:20px;
+}
+#popupLoginClose{
+font-size:14px;
+line-height:14px;
+right:6px;
+top:4px;
+position:absolute;
+color:#006;
+width:20px;
+font-weight:700;
+display:block;
+}
+#loginArea{
+}
+#loginArea ul li{
+color:#006;
+}
+#loginArea ul li input{
+  border:1px solid #ccc;
+  font-size:14px;
+  width:200px;
+  min-height:20px;
+  display:block;
+  margin-left:auto;
+  margin-bottom:3px;
+  margin-top:3px;
+  outline: none;
+ 
+ 
+}
+
+#loginArea ul li input[type=submit]{
+  background:#006;
+  color:white;
+  padding:10px;
+}
+
+/*Overview Pop Up*/
+#popupOverview{
+display:none;
+position:fixed;
+_position:absolute; /* hack for internet explorer 6*/
+height:430px;
+width:650px;
+background:#FFFFFF;
+border:2px solid #cecece;
+z-index:2;
+padding:12px;
+font-size:13px;
+}
+#popupOverview h1{
+text-align:left;
+color:#006;
+font-size:22px;
+font-weight:700;
+border-bottom:1px dotted #D3D3D3;
+padding-bottom:2px;
+margin-bottom:20px;
+}
+#popupOverviewClose{
+font-size:14px;
+line-height:14px;
+right:6px;
+top:4px;
+position:absolute;
+color:#006;
+width:20px;
+font-weight:700;
+display:block;
+}
+
+#overviewArea ul li{
+color:#006;
+}
+div.blueBox{
+	display: table; 
+	background: url(../images/ban.jpg) repeat;
+	margin: 5px auto;
+	padding: 5px;
+	width: 600px;
+	color:black;
+        max-width: 600px;
+}  
+/*Members*/
+#member {
+	display: table; 
+	background: url(../images/ban.jpg) repeat;
+	margin: 5px auto;
+	padding: 5px;
+	width: 500px;
+	color:black;
+        max-width: 500px;
+}  
+    #picture {  
+        display: table-cell; 
+		width: 200px;
+        max-width: 200px;
+		padding: 5px;
+    }  
+    #info {
+	display: table-cell;  
+	width: 300px;
+	vertical-align:top;
+	border-left-width: 1px;
+	border-left-style: dashed;
+	border-left-color: #aaa;
+}
+
+
+.thumb{
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    padding: 5px;
+    margin: auto;
+}
+ 
+.thumb img {
+    max-width: 200px;
+    max-height: 200px;
+    display:block;
+    margin-left: auto;  
+    margin-right:auto;
+}
+div.memberbill{
+	max-height:300px; 
+	overflow-y:auto;
+	margin:10px 5px 5px 10px;
+}
+.count{
+ padding:15px;
+}
+
+.login input{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border:1px solid #ccc;
+  font-size:14px;
+  width:200px;
+  min-height:20px;
+  display:block;
+  margin-bottom:3px;
+  margin-top:3px;
+  outline: none;
+ 
+  
+}
+input[type=submit].login{
+  background:#006;
+  color:white;
+  padding: 5px;
+  }
+/*Results*/
+div#results
+{
+max-width: 800px;
+margin: 0 auto;
+font-family: Arial, Helvetica, sans-serif;
+overflow:auto;
+height:auto;
+padding: 0.5em 1em 1em 1em;
+ 
+}
+ 
+div.results
+{
+max-width: 800px;
+margin: 0 auto;
+font-family: Arial, Helvetica, sans-serif;
+overflow:auto;
+height:auto;
+padding: 0.5em 1em 1em 1em;*background-color: #cccccc;
+ background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#cccccc));
+background: -moz-linear-gradient(top, #999999, #cccccc); 
+} 
+
+table.results {
+width: 100%;
+border-collapse:collapse;
+text-align:left;
+color: #606060;
+}
+
+table.results thead tr td {
+background-color: #cccccc;
+background: -webkit-gradient(linear, left top, left bottom, from(#dae4ef), to(#ecf1f7));
+background: -moz-linear-gradient(top, #dae4ef, #dae4ef);vertical-align:middle;
+padding: 0.5em;
+font-size:1em;
+font-weight:bold;
+}
+
+table.results thead tr th
+{
+padding: 0.5em;
+background:url(../images/ban.jpg);
+text-align:center;
+color: #006;
+}
+
+table.results tbody tr:nth-child(odd) {
+background-color: #dae4ef;
+
+}
+
+table.results tbody tr:nth-child(even) {
+background-color: #ecf1f7;
+}
+
+table.results tbody tr:last-child {
+border-bottom: solid 1px #404040;
+}
+
+table.results tbody tr.separator {
+background-color: #808080;
+background: -webkit-gradient(linear, left top, left bottom, from(#dae4ef), to(#ecf1f7));
+background: -moz-linear-gradient(top, #dae4ef, #ecf1f7);
+color: #dadada;
+}
+
+table.results th {
+border: solid 1px #999;
+}
+
+table.results td {
+text-align:center;
+border:groove 1px;
+vertical-align:middle;
+}
+
+table.results tfoot{
+background:url(../images/ban.jpg);
+text-align:center;
+color: #006;
+} 
+
+table.results tfoot tr:nth-child(even) {
+}
+
+table.results tfoot th tr {
+border:none;
+}
+
+.profile{
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    padding: 5px;
+}
+ 
+.profile img {
+    max-width: 300px;
+    max-height: 250px;
+    margin: auto;  
+}
+
+li.double{
+	width:50%;
+	line-height:1.5em;
+	border-bottom:1px solid #ccc;
+	float:left;
+	display:inline;
+}
+li.doubleNoLine{
+	width:50%;
+	line-height:1.5em;
+	float:left;
+	display:inline;
+}
+.draft{
+	width:250px;
+}
+
+li.triple{
+	width:33.33%;
+	line-height:1.5em;
+	border-bottom:1px solid #ccc;
+	float:left;
+	display:inline;
+}
+
+input[type=submit]#register{
+  background:#006;
+  color:white;
+  padding:10px;
+}
+input[type=submit].delete_comment{
+  background:red;
+  color:white;
+  padding:1px;
+}
+input#register {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border:1px solid #ccc;
+  font-size:14px;
+  width:200px;
+  min-height:20px;
+  display:block;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom:3px;
+  margin-top:3px;
+  outline: none;
+ 
+  
+}

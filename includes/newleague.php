@@ -1,0 +1,2 @@
+<h2>Congratulations!</h2>
+    <h3>Your league has been created successfully. You are now the commissioner.</h3><p>Invite friends to join your league.  There can be up to 16 teams in a league.  To join the league, your friends will need the league password.</p><p>When the league has all of its teams, it is time to draft members of Congress to the teams.  If you need some help with your draft, <a href="drafthelp.php">click here</a>. Once teams are drafted your league can start playing!</p>
