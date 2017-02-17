@@ -50,37 +50,33 @@ draft_team($roster_data);
 
 } else {
 
-
+/* Error Testing */
 if(isset($_POST['member_id']) === true) {
 		$team_id = $_SESSION['team_id'];
-	$required_fields = array('member_id');
-	foreach($_POST as $key=>$v){
-		if(in_array(0,$v) === true){
-			$errors[]='Must fill out roster completely.';
-			break 1;
+		$required_fields = array('member_id');
+
+		$filter = array_filter($_POST['member_id']);
+		$filter_unique  = array_unique($filter);
+
+		if($filter !== $filter_unique){
+			$errors[]='You selected the same member more than once.' ;	
 		}
-		$v_unique  = array_unique($v);
-		
-		if($v !== $v_unique){
-			$errors[]='You selected the same member more than once.' ;
-			break 1;	
-		}
-		foreach($v as $member_id){
+		foreach($filter as $member_id){
 			if(member_in_league($member_id, $league_id, $team_id) === true){
 				$member_data = member_data($member_id, 'name');
 				$errors[]= $member_data['name']." is already on a team in this league.";
 			}
 		}
 		
-	}
-	
 }
+
 if (isset($_POST['member_id']) === true && empty($errors) === true) {
 		$roster_data=array();
 		$team_id = $_SESSION['team_id'];
 	    mysql_query("DELETE FROM `rosters` WHERE team_id='$team_id' AND period_id=0") or die(mysql_error('Delete: '));
-	
-	foreach($_POST['member_id'] as $key=>$value){
+	$filtered = array_filter($_POST['member_id']);
+	foreach($filtered as $key=>$value){
+		
 			$roster_data=array(
 				'period_id'		=> 0,
 				'team_id'		=> $team_id,
@@ -125,7 +121,7 @@ if (isset($_POST['member_id']) === true && empty($errors) === true) {
 <ul>
    <li>
       <SELECT NAME=team_id> 
-      <OPTION VALUE=0>Choose Team...
+      <OPTION disabled selected value>Choose Team...
       <?=$teams?> </OPTION>
       </SELECT>
    </li>
@@ -144,7 +140,7 @@ $result=mysql_query($query);
 $team_name = mysql_result($result,0);
 $query = "SELECT rosters.member_id , members.name FROM rosters, members WHERE members.type='sen' AND rosters.member_id = members.member_id AND rosters.team_id='$team_id' AND period_id=0 ORDER BY members.lastname";
 $result = mysql_query($query) or die(mysql_error());
-echo "<ul><li><h2>SUCCESS! Set " . $team_name."'s Roster To:</h2></li><li><h3>Senators</h3></li>";
+echo "<ul><li><h2>SUCCESS! Set " . $team_name."'s Roster To:</h2></li><br><li><h3>Senators</h3></li>";
 while($row = mysql_fetch_array($result)) {
 	echo "<li class='double'>"; 
 	echo $row['name'];
